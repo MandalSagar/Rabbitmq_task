@@ -4,7 +4,7 @@ MongoDB
 RabbitMQ
 
 Installation:
-git clone <repository_url>
+git clone https://github.com/MandalSagar/Rabbitmq_task.git
 cd <repository_directory>
 python3.x -m venv env
 source env/bin/activate

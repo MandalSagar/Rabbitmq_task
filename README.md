@@ -5,7 +5,7 @@ RabbitMQ
 
 Installation:
 git clone https://github.com/MandalSagar/Rabbitmq_task.git
-cd <repository_directory>
+cd Rabbitmq_task/
 python3.x -m venv env
 source env/bin/activate
 pip install -r requirements.txt

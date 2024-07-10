@@ -32,8 +32,10 @@ def get_status_records():
         }
     }
     records = list(collection.find(query, {'_id': 0}))
-    
-    return jsonify(records)
+    status_codes = [record['status_code'] for record in records]
+    status_code_counts = Counter(status_codes)
+    response = dict(status_code_counts)
+    return jsonify(response)
 
 if __name__ == '__main__':
     subprocess.Popen(['python', 'consumer.py'])
